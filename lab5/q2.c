@@ -7,11 +7,10 @@ int main(){
     scanf("%d%d",&a,&b);
     for (int i=a;i>0;i--){
         if (a%i==0 && b%i==0){
-            HCF = i;break;
-        }
+            HCF = i;break;}
     }
     LCM = (a*b)/HCF;
-    printf("HCF: %d",HCF);
-    printf("LCM: %d",LCM);
+    printf("HCF: %d\n",HCF);
+    printf("LCM: %d\n",LCM);
     return 0;
 }

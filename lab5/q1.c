@@ -6,10 +6,8 @@ int main(){
     printf("Enter two integers: ");
     scanf("%d%d",&a,&b);
     while (a != b){
-        if (a%2==0){
-            sum += a;
-        }
-
+        if (a%2==0)
+        {sum += a;}
         if (a<b){a++;}
         else{a--;}
     }
