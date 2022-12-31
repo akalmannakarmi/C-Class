@@ -6,8 +6,8 @@ int main(){
     printf("Enter two numbers: ");
     scanf("%d%d",&a,&b);
     for (int i=a;i>0;i--){
-        if (a%i==0 && b%i==0){
-            HCF = i;break;}
+        if (a%i==0 && b%i==0 && i>HCF){
+            HCF = i;}
     }
     LCM = (a*b)/HCF;
     printf("HCF: %d\n",HCF);

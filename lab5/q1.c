@@ -5,11 +5,11 @@ int main(){
     int a,b,sum;
     printf("Enter two integers: ");
     scanf("%d%d",&a,&b);
-    while (a != b){
+    a++;
+    while (a<b){
         if (a%2==0)
         {sum += a;}
-        if (a<b){a++;}
-        else{a--;}
+        a++;
     }
     printf("Sum: %d",sum);
     return 0;
