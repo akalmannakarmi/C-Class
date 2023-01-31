@@ -2,14 +2,13 @@
 
 #include <stdio.h>
 int main(){
-    signed short int numsLen = 10;
+    unsigned short int numsLen = 10;
     float nums[numsLen];
     for (int i = 0; i < numsLen; i++){
         printf("Enter %d Number: ",i+1);
         scanf("%f",&nums[i]);
     }
-    
-    signed short int smallIndex=0,largeIndex = 0;
+    unsigned short int smallIndex=0,largeIndex = 0;
     for (int i = 0; i < numsLen; i++){
         if (nums[smallIndex] > nums[i]){
             smallIndex = i;

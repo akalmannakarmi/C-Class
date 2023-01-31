@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 int main(){
-    signed short int numsLen = 10;
+    unsigned short int numsLen = 10;
     float nums[numsLen];
     for (int i = 0; i < numsLen; i++){
         printf("Enter %d Number: ",i+1);
