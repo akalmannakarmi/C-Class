@@ -6,9 +6,22 @@ int main(){
     printf("Enter length: ");
     scanf("%d",&a_len);
     printf("Enter array");
-    int a[a_len]
+    int a[a_len],temp;
     for(int i=0;i<a_len;i++){
-        
+        printf("Enter num: ");
+        scanf("%d",&a[i]);
+    }
+    for(int i=0;i<a_len;i++){
+        for(int j=0;j<j-1;j++){
+            if(a[j]>a[j+1]){
+                temp = a[j];
+                a[j] = a[j+1];
+                a[j+1] = temp;
+            }
+        }
+    }
+    for(int i=0;i<a_len;i++){
+        printf("%d\t",a[i]);
     }
     return 0;
 }
